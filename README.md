@@ -65,6 +65,15 @@ Implantação e treinamento: 1 semana
 
 - Gerente de projeto (2): Khatlyllen Vyctória Constantino e Ruan Hoffmann Martins.
 
+
+## Considerações Finais
+
+O sistema deverá ser desenvolvido em conformidade com as normas de segurança e privacidade de dados.
+O sistema deverá ser intuitivo e de fácil utilização.
+O sistema deverá ser responsivo, adaptando-se a diferentes dispositivos (desktops, tablets e smartphones).
+O sistema deverá ser testado antes da implantação.
+Será realizado um treinamento para os usuários finais, a fim de garantir que saibam utilizar todas as funcionalidades do sistema.
+
 ## Contribuições
 
 - Dê um Fork no Repositório
