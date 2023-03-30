@@ -14,7 +14,9 @@ O ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabal
 
 ## Objetivo
 
-[ TEXTO AQUI ]
+Desenvolver um algoritmo que possa resolver o ensalamento de forma prática, que gere resultados afim de ajudar a secretaria e alunos.
+Terá uma tela mostrando a Sala/Laboratório, turma e quantidade de lugares. Sempre que for realizada a pesquisa do ensalamento ideal, o algoritmo realiza a busca das salas cruzando os dados de quantidades de alunos por turma com a quantidade de lugares de uma sala/laboratório. Quandou houver uma atualização na troca de salas, o algoritmo reconhece a troca e de imediato informa a sala ideal.
+
 
 ---
 
