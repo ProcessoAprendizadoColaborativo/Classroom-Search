@@ -68,6 +68,9 @@ Implantação e treinamento: 1 semana
 
 ## Considerações Finais
 
+0 == sala;
+1 == turma;
+
 O sistema deverá ser desenvolvido em conformidade com as normas de segurança e privacidade de dados.
 O sistema deverá ser intuitivo e de fácil utilização.
 O sistema deverá ser responsivo, adaptando-se a diferentes dispositivos (desktops, tablets e smartphones).
