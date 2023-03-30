@@ -8,7 +8,7 @@
 
 ## Identificação do problema
 
-[ TEXTO AQUI ]
+O ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Vários alunos sofrem para encontrar a sala exata do dia, caso houver uma troca.
 
 ---
 
