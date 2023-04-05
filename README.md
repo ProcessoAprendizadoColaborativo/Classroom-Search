@@ -8,22 +8,22 @@
 
 ## Identificação do problema
 
-O ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Vários alunos sofrem para encontrar a sala exata do dia, caso houver uma troca.
+O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Vários alunos sofrem para encontrar a sala exata do dia, caso houver uma troca o que gera transtorno ter que ir de bloco em bloco procurar.
 
 ---
 
 ## Objetivo
 
-Desenvolver um algoritmo que possa resolver o ensalamento de forma prática, que gere resultados afim de ajudar a secretaria e alunos.
-Terá uma tela mostrando a Sala/Laboratório, turma e quantidade de lugares. Sempre que for realizada a pesquisa do ensalamento ideal, o algoritmo realiza a busca das salas cruzando os dados de quantidades de alunos por turma com a quantidade de lugares de uma sala/laboratório. Quandou houver uma atualização na troca de salas, o algoritmo reconhece a troca e de imediato informa a sala ideal.
+Nosso objetivo para resolver esse problema, é desenvolver um algoritmo que possa ajustar o ensalamento de forma prática, que gere resultados afim de ajudar a secretaria e alunos.
+Terá uma tela mostrando a Sala/Laboratório, turma e quantidade de lugares. Sempre que for realizada a pesquisa do ensalamento ideal, o algoritmo realiza a busca das salas cruzando os dados de quantidades de alunos por turma com a quantidade de lugares de uma sala/laboratório. Quando houver uma atualização na troca de salas, o algoritmo reconhece a troca e de imediato informa a sala ideal.
 
 
 ---
 
 ## Funcionalidades
 
-- Cadastro de turmas e salas de aula: algoritmo busca no ensalamento;
-- Cadastro de alunos: o sistema deve buscar banco de dados da católica;
+- Cadastro de turmas: algoritmo deve cadastrar as turmas com o nº de alunos. E também buscar os respectivos dados no banco de dados criado;
+- Cadastro de sala/laboratório: o algoritmo deve cadastrar as salas/laboratórios com os nº de carteiras/PC disposíveis. E deve buscar banco de dados essas informações;
 - Busca de sala: o sistema deve permitir a busca de sala por nome do aluno ou professor;
 - Conforme as especificações dos laboratórios ou salas de aula referentes a quantidade de computadores ou quantidade de carteiras disponíveis. a secretária irá colocar os professores e a quantidade de alunos de cada turma e o software vai definir ou melhor ensalamento.
 - Apenas número de alunos por turma, e número disponível de computadores e/ou carteiras disponíveis por sala.
@@ -51,11 +51,11 @@ Banco de dados: O banco de dados utilizado será o MySQL.
 
 Levantamento de requisitos: 1 semanas 
 
-Desenvolvimento do banco de dados: 1 semanas 
+Desenvolvimento do banco de dados: 1 semana.
 
 Desenvolvimento do back-end: 4 semanas 
 
-Desenvolvimento do front-end: 4 semanas 
+Desenvolvimento do front-end: 2 semanas 
 
 Testes e correções: 2 semanas 
 
