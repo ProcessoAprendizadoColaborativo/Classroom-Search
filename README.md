@@ -1,11 +1,5 @@
 # Classroom Search
 
-## Escopo do projeto
-
- Algoritmo para Localizar Sala de Aula
-
----
-
 ## Identificação do problema
 
 O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Vários alunos sofrem para encontrar a sala exata do dia, caso houver uma troca o que gera transtorno ter que ir de bloco em bloco procurar.
@@ -17,8 +11,28 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 Nosso objetivo para resolver esse problema, é desenvolver um algoritmo que possa ajustar o ensalamento de forma prática, que gere resultados afim de ajudar a secretaria e alunos.
 Terá uma tela mostrando a Sala/Laboratório, turma e quantidade de lugares. Sempre que for realizada a pesquisa do ensalamento ideal, o algoritmo realiza a busca das salas cruzando os dados de quantidades de alunos por turma com a quantidade de lugares de uma sala/laboratório. Quando houver uma atualização na troca de salas, o algoritmo reconhece a troca e de imediato informa a sala ideal.
 
+## Requisitos
 
----
+Para efetivação deste projeto, o repositório possui endpoints que farão a manipulação do banco de dados com a regra de negócio do projeto, tendo as principais entidades do projeto como: Sala, Aluno, buscar e cadastrar. O projeto usa MySQL e Python. Para os principais pontos que o sistema deve atender, foram criados requisitos de sistemas, que são descrições das funcionalidades, sejam elas funcionais ou não funcionais.
+
+--
+
+##Requisitos funcionais
+
+-O sistema deve permitir que o usuário insira o número da sala de aula que deseja localizar.
+-O sistema deve apresentar a localização da sala de aula. 
+-O sistema deve permitir que o usuário visualize informações adicionais sobre a sala de aula, como o nome do professor responsável.
+-O sistema deve atualizar as informações de localização da sala de aula em tempo real, de forma que o usuário possa saber se a sala está ocupada ou livre.
+
+
+## Requisitos não funcionais
+
+-Desempenho: o sistema deve ser rápido e responsivo, para garantir que o usuário possa facilmente obter informações sobre a localização da sala de aula.
+-Confiabilidade: o sistema deve ser confiável e estar disponível em até 95%.
+-Escalabilidade: o sistema deve ser escalável para acomodar um grande número de usuários e salas de aula sem comprometer o desempenho.
+-Interface amigável: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação dos usuários e tornar a experiência de uso agradável.
+
+--
 
 ## Funcionalidades
 
