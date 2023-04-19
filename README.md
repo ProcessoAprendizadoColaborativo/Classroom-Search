@@ -50,13 +50,11 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 ## Artefatoss
 
 
-##Diagrama de classes
+## Diagrama de classes
 
 ![Diagrama sem nome drawio (1)](https://user-images.githubusercontent.com/29105030/233210417-059fd366-1e1d-449e-960b-cfe7cfb0ad35.png)
 
-
 - UML;
-- Requisitos;
 
 ## Tecnologias
 
