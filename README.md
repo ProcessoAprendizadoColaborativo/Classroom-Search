@@ -16,7 +16,7 @@ Terá uma tela mostrando a Sala/Laboratório, turma e quantidade de lugares. Sem
 Para efetivação deste projeto, o repositório possui endpoints que farão a manipulação do banco de dados com a regra de negócio do projeto, tendo as principais entidades do projeto como: Sala, Aluno, buscar e cadastrar. O projeto usa MySQL e Python. Para os principais pontos que o sistema deve atender, foram criados requisitos de sistemas, que são descrições das funcionalidades, sejam elas funcionais ou não funcionais.
 
 
-##Requisitos funcionais
+## Requisitos funcionais
 
 -O sistema deve permitir que o usuário insira o número da sala de aula que deseja localizar.
 -O sistema deve apresentar a localização da sala de aula. 
@@ -24,7 +24,7 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 -O sistema deve atualizar as informações de localização da sala de aula em tempo real, de forma que o usuário possa saber se a sala está ocupada ou livre.
 
 
-##Requisitos não funcionais
+## Requisitos não funcionais
 
 -Desempenho: o sistema deve ser rápido e responsivo, para garantir que o usuário possa facilmente obter informações sobre a localização da sala de aula.
 -Confiabilidade: o sistema deve ser confiável e estar disponível em até 95%.
