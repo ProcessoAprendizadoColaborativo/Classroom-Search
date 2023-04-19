@@ -19,25 +19,35 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 ## Requisitos funcionais
 
 -O sistema deve permitir que o usuário insira o número da sala de aula que deseja localizar.
+
 -O sistema deve apresentar a localização da sala de aula. 
+
 -O sistema deve permitir que o usuário visualize informações adicionais sobre a sala de aula, como o nome do professor responsável.
+
 -O sistema deve atualizar as informações de localização da sala de aula em tempo real, de forma que o usuário possa saber se a sala está ocupada ou livre.
 
 
 ## Requisitos não funcionais
 
 -Desempenho: o sistema deve ser rápido e responsivo, para garantir que o usuário possa facilmente obter informações sobre a localização da sala de aula.
+
 -Confiabilidade: o sistema deve ser confiável e estar disponível em até 95%.
+
 -Escalabilidade: o sistema deve ser escalável para acomodar um grande número de usuários e salas de aula sem comprometer o desempenho.
+
 -Interface amigável: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação dos usuários e tornar a experiência de uso agradável.
 
 
 ## Funcionalidades
 
 - Cadastro de turmas: algoritmo deve cadastrar as turmas com o nº de alunos. E também buscar os respectivos dados no banco de dados criado;
+
 - Cadastro de sala/laboratório: o algoritmo deve cadastrar as salas/laboratórios com os nº de carteiras/PC disposíveis. E deve buscar banco de dados essas informações;
+
 - Busca de sala: o sistema deve permitir a busca de sala por nome do aluno ou professor;
+
 - Conforme as especificações dos laboratórios ou salas de aula referentes a quantidade de computadores ou quantidade de carteiras disponíveis. a secretária irá colocar os professores e a quantidade de alunos de cada turma e o software vai definir ou melhor ensalamento.
+
 - Apenas número de alunos por turma, e número disponível de computadores e/ou carteiras disponíveis por sala.
     
   |Entradas | Saidas |
@@ -47,15 +57,14 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
   | n_lugares_sala | cap_sala  |
   |                | qtd_sala |
 
+## Artefatoss
 
-## Diagrama de classes
+
+### Diagrama de classes
 
 ![Diagrama sem nome drawio (1)](https://user-images.githubusercontent.com/29105030/233210417-059fd366-1e1d-449e-960b-cfe7cfb0ad35.png)
 
-## UML
-
-![image](https://user-images.githubusercontent.com/29105030/233210823-fc442019-5080-4619-8d33-344c12e85ac0.png)
-
+- UML;
 
 ## Tecnologias
 
