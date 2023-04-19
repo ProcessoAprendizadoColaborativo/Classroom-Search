@@ -47,14 +47,15 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
   | n_lugares_sala | cap_sala  |
   |                | qtd_sala |
 
-## Artefatoss
-
 
 ## Diagrama de classes
 
 ![Diagrama sem nome drawio (1)](https://user-images.githubusercontent.com/29105030/233210417-059fd366-1e1d-449e-960b-cfe7cfb0ad35.png)
 
-- UML;
+## UML
+
+![image](https://user-images.githubusercontent.com/29105030/233210823-fc442019-5080-4619-8d33-344c12e85ac0.png)
+
 
 ## Tecnologias
 
