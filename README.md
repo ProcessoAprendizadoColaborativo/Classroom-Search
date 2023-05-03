@@ -2,13 +2,13 @@
 
 ## Identificação do problema
 
-O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Vários alunos sofrem para encontrar a sala exata do dia, caso houver uma troca o que gera transtorno ter que ir de bloco em bloco procurar.
+O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente.
 
 
 ## Objetivo
 
-Nosso objetivo para resolver esse problema, é desenvolver um algoritmo que possa ajustar o ensalamento de forma prática, que gere resultados afim de ajudar a secretaria e alunos.
-Terá uma tela mostrando a Sala/Laboratório, turma e quantidade de lugares. Sempre que for realizada a pesquisa do ensalamento ideal, o algoritmo realiza a busca das salas cruzando os dados de quantidades de alunos por turma com a quantidade de lugares de uma sala/laboratório. Quando houver uma atualização na troca de salas, o algoritmo reconhece a troca e de imediato informa a sala ideal.
+Tendo o problema em vista, nosso objetivo para resolve-lo, é desenvolver um algoritmo que possa ajustar o ensalamento de forma prática, que gere resultados afim de ajudar a secretaria.
+Terá uma tela mostrando a Sala/Laboratório, turma e quantidade de lugares. Sempre que for realizada a pesquisa do ensalamento ideal, o algoritmo realiza a busca das salas cruzando os dados de quantidades de alunos por turma com a quantidade de lugares de uma sala/laboratório e horários para não haver conflitos de horários. Quando houver uma atualização na troca de salas, o algoritmo reconhece a troca e de imediato informa a sala ideal.
 
 
 ## Requisitos
@@ -57,8 +57,6 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
   | n_lugares_sala | cap_sala  |
   |                | qtd_sala |
 
-## Artefatoss
-
 
 ### Diagrama de classes
 
@@ -68,9 +66,16 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 
 ## Tecnologias
 
-Linguagem de programação: o algoritmo será desenvolvido utilizando Python. 
+Linguagem de programação: o algoritmo será desenvolvido utilizando Python.
 
-Banco de dados: O banco de dados utilizado será o MySQL.
+##Front-end
+
+
+##Banco de dados
+
+O banco de dados utilizado será o MySQL.
+
+##Back-end
 
 ## Cronograma
 
