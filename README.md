@@ -62,7 +62,10 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 
 ![Diagrama sem nome drawio (1)](https://user-images.githubusercontent.com/29105030/233210417-059fd366-1e1d-449e-960b-cfe7cfb0ad35.png)
 
-- UML;
+## UML
+
+![UML PAC 7 drawio](https://user-images.githubusercontent.com/29105030/236072075-78744beb-7757-42df-98d1-303dbfcb678d.png)
+
 
 ## Tecnologias
 
