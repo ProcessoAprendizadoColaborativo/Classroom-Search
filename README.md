@@ -71,11 +71,16 @@ Linguagem de programação: o algoritmo será desenvolvido utilizando Python.
 ##Front-end
 
 
-##Banco de dados
+## Banco de dados
 
 O banco de dados utilizado será o MySQL.
 
-##Back-end
+Host: localhost    Database: mapping
+
+![WhatsApp Image 2023-05-03 at 20 14 11](https://user-images.githubusercontent.com/29105030/236071416-151117d3-2472-4675-8d75-b7bd77a86b81.jpeg)
+
+
+## Back-end
 
 ## Cronograma
 
