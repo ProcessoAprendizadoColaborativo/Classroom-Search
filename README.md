@@ -24,8 +24,6 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 
 -O sistema deve permitir que o usuário visualize informações adicionais sobre a sala de aula, como o nome do professor responsável.
 
--O sistema deve atualizar as informações de localização da sala de aula em tempo real, de forma que o usuário possa saber se a sala está ocupada ou livre.
-
 
 ## Requisitos não funcionais
 
