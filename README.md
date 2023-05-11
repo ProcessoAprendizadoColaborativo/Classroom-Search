@@ -25,9 +25,6 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 - O sistema deve apresentar a sala de aula com o código da turma e o nº de lugares. 
 
 
-=======
-
-
 ## Requisitos não funcionais
 
 -Desempenho: o sistema deve ser prático e de rápida resposta a solicitação.
@@ -52,9 +49,8 @@ Aqui vai todo sobre o front-end
 
 O banco de dados utilizado será o MySQL.
 
-Host: localhost    Database: mapping
+![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
 
-![WhatsApp Image 2023-05-03 at 20 14 11](https://user-images.githubusercontent.com/29105030/236071416-151117d3-2472-4675-8d75-b7bd77a86b81.jpeg)
 
 ## Back-end
 
