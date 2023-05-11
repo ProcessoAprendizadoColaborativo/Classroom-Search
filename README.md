@@ -39,7 +39,7 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 
 ## Tecnologias
 
-Linguagem de programação: o algoritmo será desenvolvido utilizando Python.
+* [![Python][Python.py]][Python-url]
 
 ## Front-end
 
