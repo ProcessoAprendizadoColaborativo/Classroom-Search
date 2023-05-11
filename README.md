@@ -8,8 +8,6 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 ## Objetivo
 
 Tendo o problema em vista, nosso objetivo para resolve-lo, é desenvolver um algoritmo que possa ajustar o ensalamento de forma prática, que gere resultados afim de ajudar a secretaria.
-Terá uma tela mostrando a Sala/Laboratório, turma e quantidade de lugares. Sempre que for realizada a pesquisa do ensalamento ideal, o algoritmo realiza a busca das salas cruzando os dados de quantidades de alunos por turma com a quantidade de lugares de uma sala/laboratório e horários para não haver conflitos de horários. Quando houver uma atualização na troca de salas, o algoritmo reconhece a troca e de imediato informa a sala ideal.
-
 
 ## Requisitos
 
@@ -18,54 +16,26 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 
 ## Requisitos funcionais
 
--O sistema deve permitir que o usuário insira o número da sala de aula que deseja localizar.
+- Permitir cadastra turmas: algoritmo deve cadastrar as turmas com: Cod da turma, nº de alunos, tipo de sala. E também buscar os respectivos dados no banco de dados criado;
 
--O sistema deve apresentar a localização da sala de aula. 
+- Permitir cadastro de sala/laboratório: o algoritmo deve cadastrar as salas/laboratórios com os nº de carteiras/PC disposíveis e tipo. E deve buscar banco de dados essas informações;
 
--O sistema deve permitir que o usuário visualize informações adicionais sobre a sala de aula, como o nome do professor responsável.
+- Permitir atualizar o ensalamento quando há uma solicitação de cancelamento de aula ou alteração de horário.  
 
--O sistema deve atualizar as informações de localização da sala de aula em tempo real, de forma que o usuário possa saber se a sala está ocupada ou livre.
+- O sistema deve apresentar a sala de aula com o código da turma e o nº de lugares. 
 
 
 ## Requisitos não funcionais
 
--Desempenho: o sistema deve ser rápido e responsivo, para garantir que o usuário possa facilmente obter informações sobre a localização da sala de aula.
+-Desempenho: o sistema deve ser prático e de rápida resposta a solicitação.
 
--Confiabilidade: o sistema deve ser confiável e estar disponível em até 95%.
+-Confiabilidade: o sistema deve ser confiável e ser acertivo da distribuição das salas/lab em até 95%.
 
--Escalabilidade: o sistema deve ser escalável para acomodar um grande número de usuários e salas de aula sem comprometer o desempenho.
-
--Interface amigável: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação dos usuários e tornar a experiência de uso agradável.
-
-
-## Funcionalidades
-
-- Cadastro de turmas: algoritmo deve cadastrar as turmas com o nº de alunos. E também buscar os respectivos dados no banco de dados criado;
-
-- Cadastro de sala/laboratório: o algoritmo deve cadastrar as salas/laboratórios com os nº de carteiras/PC disposíveis. E deve buscar banco de dados essas informações;
-
-- Busca de sala: o sistema deve permitir a busca de sala por nome do aluno ou professor;
-
-- Conforme as especificações dos laboratórios ou salas de aula referentes a quantidade de computadores ou quantidade de carteiras disponíveis. a secretária irá colocar os professores e a quantidade de alunos de cada turma e o software vai definir ou melhor ensalamento.
-
-- Apenas número de alunos por turma, e número disponível de computadores e/ou carteiras disponíveis por sala.
-    
-  |Entradas | Saidas |
-  |---|---|
-  | n_alunos_turma | cod_sala  |
-  | n_pc-lab_sala  | cod_turma |
-  | n_lugares_sala | cap_sala  |
-  |                | qtd_sala |
-
-
-### Diagrama de classes
-
-![Diagrama sem nome drawio (1)](https://user-images.githubusercontent.com/29105030/233210417-059fd366-1e1d-449e-960b-cfe7cfb0ad35.png)
+-Interface: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação do usuário e tornar a experiência de uso agradável.  
 
 ## UML
 
 ![UML PAC 7 drawio](https://user-images.githubusercontent.com/29105030/236072075-78744beb-7757-42df-98d1-303dbfcb678d.png)
-
 
 ## Tecnologias
 
