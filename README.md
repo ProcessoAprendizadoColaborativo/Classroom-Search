@@ -39,8 +39,6 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 
 ## Tecnologias
 
-* [![Python][Python.py]][Python-url]
-* [! [Python][Python.py]][Python-url]
 
 ## Front-end
 
