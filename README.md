@@ -40,19 +40,24 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 ## Tecnologias
 
 * [![Python][Python.py]][Python-url]
+* [! [Python][Python.py]][Python-url]
 
 ## Front-end
+
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 Aqui vai todo sobre o front-end
 
 ## Banco de dados
 
-O banco de dados utilizado será o MySQL.
+O banco de dados utilizado será o ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white).
 
 ![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
 
 
 ## Back-end
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Cronograma
 
