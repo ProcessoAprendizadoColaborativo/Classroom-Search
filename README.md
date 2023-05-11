@@ -25,6 +25,9 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 - O sistema deve apresentar a sala de aula com o código da turma e o nº de lugares. 
 
 
+=======
+
+
 ## Requisitos não funcionais
 
 -Desempenho: o sistema deve ser prático e de rápida resposta a solicitação.
