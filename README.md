@@ -1,4 +1,5 @@
-# Classroom Search
+![Classsearch](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/6eb5afd8-8496-4f72-a913-85ba23979a05)
+
 
 ## Identificação do problema
 
