@@ -52,6 +52,9 @@ CÓDIGO DA API AQUI
 ### ALGORITMO 
 Será desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
+Algoritmo de análise combinatória:
+
+
 ## Front-end
 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
