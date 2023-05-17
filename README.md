@@ -1,12 +1,9 @@
-# Ensalamento
+![Design sem nome (11)-fococlipping-standard](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/54cef8fc-702e-4e78-aeff-8b40389527e4)
+
 
 ## Identificação do problema
 
-O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente.
-
-## Identificação do problema
-
-O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente.
+O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente. Portanto decidimos automatizar o ensalamento utilizando 
 
 ## Requisitos funcionais
 
@@ -49,21 +46,18 @@ O banco de dados utilizado será o MySQL.
 
 ### Back-end
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
-### Criação da ***API***
+### Criação da **API**
 
 CÓDIGO DA API AQUI
+
+### ALGORITMO 
+Será desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Front-end
 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 Aqui vai todo sobre o front-end
-
-
-
-Linguagem de programação: o algoritmo será desenvolvido utilizando Python. 
 
 ## Cronograma
 
