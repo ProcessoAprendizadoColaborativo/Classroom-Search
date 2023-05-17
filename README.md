@@ -1,44 +1,59 @@
-#Ensalamento
+# Ensalamento
 
 ## Identificação do problema
 
 O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente.
 
+## Identificação do problema
 
-## Objetivo
-
-Tendo o problema em vista, nosso objetivo para resolve-lo, é desenvolver um algoritmo que possa ajustar o ensalamento de forma prática, que gere resultados afim de ajudar a secretaria.
-
-## Requisitos
-
-Para efetivação deste projeto, o repositório possui endpoints que farão a manipulação do banco de dados com a regra de negócio do projeto, tendo as principais entidades do projeto como: Sala, Aluno, buscar e cadastrar. O projeto usa MySQL e Python. Para os principais pontos que o sistema deve atender, foram criados requisitos de sistemas, que são descrições das funcionalidades, sejam elas funcionais ou não funcionais.
-
+O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente.
 
 ## Requisitos funcionais
 
-- Permitir cadastra turmas: algoritmo deve cadastrar as turmas com: Cod da turma, nº de alunos, tipo de sala. E também buscar os respectivos dados no banco de dados criado;
+- Permitir cadastrar turmas. o algoritmo deve cadastrar as turmas com:
+  - Código da turma;
+  - nº de alunos;
+  - tipo de sala.
+- Também buscar os respectivos dados no banco de dados criado;
 
-- Permitir cadastro de sala/laboratório: o algoritmo deve cadastrar as salas/laboratórios com os nº de carteiras/PC disposíveis e tipo. E deve buscar banco de dados essas informações;
-
+- Permitir cadastrar salas/Laboratórios.
+  - Código de ambiente;
+  - tipo de sala;
+  - nº de lugares.
+  
 - Permitir atualizar o ensalamento quando há uma solicitação de cancelamento de aula ou alteração de horário.  
 
 - O sistema deve apresentar a sala de aula com o código da turma e o nº de lugares. 
 
-
 ## Requisitos não funcionais
 
--Desempenho: o sistema deve ser prático e de rápida resposta a solicitação.
+- Desempenho: o sistema deve ser prático e de rápida resposta a solicitação.
 
--Confiabilidade: o sistema deve ser confiável e ser acertivo da distribuição das salas/lab em até 95%.
+- Confiabilidade: o sistema deve ser confiável e ser acertivo da distribuição das salas/lab em até 95%.
 
--Interface: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação do usuário e tornar a experiência de uso agradável.  
+- Interface: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação do usuário e tornar a experiência de uso agradável.  
 
 ## UML
 
 ![UML PAC 7 drawio](https://user-images.githubusercontent.com/29105030/236072075-78744beb-7757-42df-98d1-303dbfcb678d.png)
 
-## Tecnologias
+## Tecnologias utilizadas
 
+### Banco de dados
+
+O banco de dados utilizado será o MySQL.
+
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white).
+
+![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
+
+### Back-end
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+### Criação da ***API***
+
+CÓDIGO DA API AQUI
 
 ## Front-end
 
@@ -46,37 +61,29 @@ Para efetivação deste projeto, o repositório possui endpoints que farão a ma
 
 Aqui vai todo sobre o front-end
 
-## Banco de dados
-
-O banco de dados utilizado será o ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white).
-
-![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
 
 
-## Back-end
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+Linguagem de programação: o algoritmo será desenvolvido utilizando Python. 
 
 ## Cronograma
 
-Levantamento de requisitos: 1 semanas 
+Levantamento de requisitos: 1 semanas
 
 Desenvolvimento do banco de dados: 1 semana.
 
-Desenvolvimento do back-end: 4 semanas 
+Desenvolvimento do back-end: 4 semanas
 
 Desenvolvimento do front-end: 2 semanas 
 
-Testes e correções: 2 semanas 
+Testes e correções: 2 semanas
 
-Implantação e treinamento: 1 semana 
+Implantação e treinamento: 1 semana
 
 ## Equipe
 
 - Desenvolvedores (2): Eder Ramos Filho e  Eduardo Paterno.
 
 - Gerente de projeto (2): Khatlyllen Vyctória Constantino e Ruan Hoffmann Martins.
-
 
 ## Considerações Finais
 
