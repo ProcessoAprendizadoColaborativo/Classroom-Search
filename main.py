@@ -15,10 +15,10 @@ cnx = mysql.connector.connect(
 
 corsa = cnx.cursor()
 
-
 # Endpoint para listar todas as salas
 @app.route('/', methods=['GET'])
 def get_salas():
+  
     corsa.execute("SELECT * FROM salas")
     result = corsa.fetchall()
     users = []
@@ -30,7 +30,6 @@ def get_salas():
         }
         users.append(user_dict)
     return jsonify(users)
-
 
 # Endpoint para adicionar uma nova sala
 @app.route('/criar-salas', methods=['POST'])
@@ -76,6 +75,7 @@ def add_turma():
     corsa.execute(sql, values)
     corsa.commit()
     return jsonify({"message": "Turma adicionada com sucesso"})
+
 
 
 if __name__ == '__main__':
