@@ -1,0 +1,108 @@
+body {
+  background-color: #FFF;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8C1D1D;
+  color: #FFF;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+table img {
+  width: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.options a {
+  color: #FFF;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.cadastro-sala, .salas, .cadastro-turma, .turmas{
+  margin: 0 auto;
+  /* width: 300px; */
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.cadastro-sala h2, .cadastro-turma h2, .calcular-ensalamento h2, .calcular-ensalamento h2  {
+  text-align: center;
+  color: #8C1D1D;
+}
+
+.salvar-btn {
+  background-color: #8C1D1D;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.salas, .turmas, .calcular-ensalamento{
+  text-align: center;
+}
+
+.salas h2, .turmas h2 {
+  color: #8C1D1D;
+}
+
+.calcular-btn {
+  background-color: #8C1D1D;
+  color: #FFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.cadastro-sala label, .salas th:nth-child(3), .turmas th:nth-child(3) {
+  font-weight: bold;
+}

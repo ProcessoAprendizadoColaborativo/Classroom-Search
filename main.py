@@ -9,14 +9,15 @@ cnx = mysql.connector.connect(
     host=os.environ.get("DB_HOST"),
     database=os.environ.get("DB_NAME"),
     port=int(os.environ.get("DB_PORT")),
-    user=os.environ.get("DB_USER")
+    user=os.environ.get("DB_USER"),
+    password=os.environ.get("DB_PASS")
 
 )
 
 corsa = cnx.cursor()
 
 # Endpoint para listar todas as salas
-@app.route('/', methods=['GET'])
+@app.route('/salas', methods=['GET'])
 def get_salas():
   
     corsa.execute("SELECT * FROM salas")
