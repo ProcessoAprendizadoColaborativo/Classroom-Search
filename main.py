@@ -1,7 +1,9 @@
 import os
+import request
+import jsonify
 import mysql.connector
+from flask import Flask
 from dotenv import load_dotenv
-from flask import Flask, jsonify, request
 
 load_dotenv()
 app = Flask(__name__)

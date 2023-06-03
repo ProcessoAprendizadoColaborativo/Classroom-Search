@@ -1,0 +1,5 @@
+request
+jsonify
+mysql.connector
+flask
+dotenv
