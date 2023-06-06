@@ -1,7 +1,8 @@
 import os
 import jsonify
-import request
 import mysql.connector
+import requests 
+import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from fastapi.responses import JSONResponse
@@ -18,7 +19,7 @@ app = FastAPI()
 cnx = mysql.connector.connect(
     host=os.environ.get("DB_HOST"),
     database=os.environ.get("DB_NAME"),
-    port=int(os.environ.get("DB_PORT")),
+    port=os.environ.get("DB_PORT"),
     user=os.environ.get("DB_USER"),
     password=os.environ.get("DB_PASS")
 
@@ -90,4 +91,4 @@ def add_turma():
 
 
 if __name__ == '__main__':
-    app.run()
+    uvicorn.run(app, host="localhost", port=3000)
