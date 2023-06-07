@@ -1,24 +1,36 @@
 import os
+import jsonify
 import mysql.connector
+import requests 
+import uvicorn
+from fastapi import FastAPI
 from dotenv import load_dotenv
-from flask import Flask, jsonify, request
+from fastapi.responses import JSONResponse
 
+
+#from flask import Flask
 load_dotenv()
-app = Flask(__name__)
+
+
+#app = Flask(__name__)
+app = FastAPI()
+
+
 cnx = mysql.connector.connect(
     host=os.environ.get("DB_HOST"),
     database=os.environ.get("DB_NAME"),
-    port=int(os.environ.get("DB_PORT")),
-    user=os.environ.get("DB_USER")
+    port=os.environ.get("DB_PORT"),
+    user=os.environ.get("DB_USER"),
+    password=os.environ.get("DB_PASS")
 
 )
 
 corsa = cnx.cursor()
 
+
 # Endpoint para listar todas as salas
-@app.route('/', methods=['GET'])
+@app.get('/salas')
 def get_salas():
-  
     corsa.execute("SELECT * FROM salas")
     result = corsa.fetchall()
     users = []
@@ -29,10 +41,11 @@ def get_salas():
             "Posicao": user[2]
         }
         users.append(user_dict)
-    return jsonify(users)
+    return JSONResponse(content=users)
+
 
 # Endpoint para adicionar uma nova sala
-@app.route('/criar-salas', methods=['POST'])
+@app.post('/criar-salas')
 def add_sala():
     data = request.json
     id_sala = data['id_sala']
@@ -46,7 +59,7 @@ def add_sala():
 
 
 # Endpoint para listar todas as turmas
-@app.route('/', methods=['GET'])
+@app.get('/turmas')
 def get_turmas():
     corsa.execute("SELECT * FROM turmas")
     result = corsa.fetchall()
@@ -59,11 +72,11 @@ def get_turmas():
             "disponibilidade": user[3]
         }
         users.append(user_dict)
-    return jsonify(users)
+    return JSONResponse(content=users)
 
 
 # Endpoint para adicionar uma nova turma
-@app.route('/criar-turmas', methods=['POST'])
+@app.post('/criar-turmas')
 def add_turma():
     data = request.json
     id_turma = data['id_turma']
@@ -77,6 +90,5 @@ def add_turma():
     return jsonify({"message": "Turma adicionada com sucesso"})
 
 
-
 if __name__ == '__main__':
-    app.run()
+    uvicorn.run(app, host="localhost", port=3000)
