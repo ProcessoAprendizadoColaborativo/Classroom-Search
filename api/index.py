@@ -59,7 +59,7 @@ def add_sala():
 
 
 # Endpoint para listar todas as turmas
-@app.get('/')
+@app.get('/turmas')
 def get_turmas():
     corsa.execute("SELECT * FROM turmas")
     result = corsa.fetchall()
