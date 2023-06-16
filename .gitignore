@@ -1,3 +1,5 @@
 .vercel
 .idea
 __pycache__
+/.*
+./services/matcher/*
