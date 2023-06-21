@@ -1,11 +1,12 @@
 import os
-import mysql.connector
+import json
 import uvicorn
-from fastapi import FastAPI, Request
+import mysql.connector
+from matcher import matcher
 from dotenv import load_dotenv
 from itertools import combinations
+from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
-import json
 
 
 load_dotenv()
@@ -86,36 +87,45 @@ def add_turma(request: Request):
     return JSONResponse(content={"message": "Turma adicionada com sucesso"})
 
 
-def combinar_salas_turmas(salas, turmas):
-    melhores_solucoes = []
-    for r in range(1, len(turmas) + 1):
-        combinacoes = combinations(turmas, r)
-        for combinacao in combinacoes:
-            salas_disponiveis = [sala for sala in salas]
-            turmas_validas = []
-            sala_valida = True
-            for turma in combinacao:
-                turma_adicionada = False
-                for sala in salas_disponiveis:
-                    if turma['qtd_alunos'] <= sala['capacidade'] and turma['disponibilidade'] == sala['disponibilidade']:
-                        sala['capacidade'] -= turma['qtd_alunos']
-                        turmas_validas.append(turma)
-                        turma_adicionada = True
-                        break
-                if not turma_adicionada:
-                    sala_valida = False
-                    break
-            if sala_valida and len(turmas_validas) == len(turmas):
-                melhores_solucoes.append((turmas_validas, list(combinacao)))
-    return melhores_solucoes
+@app.route('/executar-algoritmo', methods=['POST'])
+def executar_algoritmo():
+    # Aqui você pode colocar o código do algoritmo que deseja executar
+    # Certifique-se de adaptar o código anteriormente fornecido para esta função
+    resultado = 'Resultado do algoritmo'
+
+    return resultado
+
+# Plano B
+## def combinar_salas_turmas(salas, turmas):
+#     melhores_solucoes = []
+#     for r in range(1, len(turmas) + 1):
+#         combinacoes = combinations(turmas, r)
+#         for combinacao in combinacoes:
+#             salas_disponiveis = [sala for sala in salas]
+#             turmas_validas = []
+#             sala_valida = True
+#             for turma in combinacao:
+#                 turma_adicionada = False
+#                 for sala in salas_disponiveis:
+#                     if turma['qtd_alunos'] <= sala['capacidade'] and turma['disponibilidade'] == sala['disponibilidade']:
+#                         sala['capacidade'] -= turma['qtd_alunos']
+#                         turmas_validas.append(turma)
+#                         turma_adicionada = True
+#                         break
+#                 if not turma_adicionada:
+#                     sala_valida = False
+#                     break
+#             if sala_valida and len(turmas_validas) == len(turmas):
+#                 melhores_solucoes.append((turmas_validas, list(combinacao)))
+#     return melhores_solucoes
 
 
-@app.get('/matchs')
-def encontrar_melhores_combinacoes():
-    salas = get_salas().json()
-    turmas = get_turmas().json()
-    melhores_combinacoes = combinar_salas_turmas(salas, turmas)
-    return JSONResponse(content=json.dumps(melhores_combinacoes, default=str))
+## @app.get('/matchs')
+## def encontrar_melhores_combinacoes():
+#     salas = get_salas().json()
+#     turmas = get_turmas().json()
+#     melhores_combinacoes = combinar_salas_turmas(salas, turmas)
+#     return JSONResponse(content=json.dumps(melhores_combinacoes, default=str))
 
 
 if __name__ == '__main__':
