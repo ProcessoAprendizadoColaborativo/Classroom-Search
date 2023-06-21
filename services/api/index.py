@@ -33,7 +33,8 @@ def get_salas():
         sala_dict = {
             "id_sala": sala[0],
             "Ambiente": sala[1],
-            "Posicao": sala[2]
+            "Posicao": sala[2],
+            "Lugares": sala[3]
         }
         salas.append(sala_dict)
     return JSONResponse(content=salas)
@@ -46,8 +47,9 @@ def add_sala(request: Request):
     id_sala = data['id_sala']
     ambiente = data['ambiente']
     posicao = data['posicao']
-    sql = "INSERT INTO salas (id_sala, ambiente, posicao) VALUES (%s, %s, %s)"
-    values = (id_sala, ambiente, posicao)
+    lugares = data['lugares']
+    sql = "INSERT INTO salas (id_sala, ambiente, posicao, lugares) VALUES (%s, %s, %s)"
+    values = (id_sala, ambiente, posicao, lugares)
     cursor.execute(sql, values)
     cnx.commit()
     return JSONResponse(content={"message": "Sala adicionada com sucesso"})
