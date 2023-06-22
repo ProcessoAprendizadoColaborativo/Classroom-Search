@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Católica de SC</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./imgs/logo.png" alt="Logo Católica de SC">
+    </div>
+    <div class="options">
+      <a href="#">Cadastro de Sala e Turma</a>
+      <a href="#">Resultados Ensalamentos</a>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="cadastro-sala">
+      <h2>Cadastro de Sala</h2>
+      <form id="formsala">
+        <label for="id-sala"><strong>ID de Sala:</strong></label>
+        <input type="text" id="id-sala-input" name="id-sala" required>
+        <label for="quantidade-lugares"><strong>Quantidade de Lugares:</strong></label>
+        <input type="text" id="quantidade-lugares-input" name="quantidade-lugares" required>
+        <label for="tipo-sala"><strong>Tipo de Sala:</strong></label>
+        <select id="tipo-sala-select" name="tipo-sala">
+          <option value="sala-aula">Sala de Aula</option>
+          <option value="laboratorio">Laboratorio</option>
+        </select>
+        <button class="salvar-btn">Salvar</button>
+      </form>
+    </div>
+
+    <div class="salas">
+      <h2>Salas Cadastradas</h2>
+      <table>
+        <tr>
+          <th><strong>ID de Sala</strong></th>
+          <th><strong>Quantidade de Lugares</strong></th>
+          <th><strong>Tipo de Sala</strong></th>
+          <th><strong>Excluir Sala</strong></th>
+        </tr>
+        <tr>
+          <td id="id-sala-cell"></td>
+          <td id="lugares-cell"></td>
+          <td id="tipo-sala-cell"></td>
+          <td>
+            <button>
+              <span><img src="./imgs/lixeira.svg" alt="Excluir Sala"><br>
+                Excluir</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>A02</td>
+          <td>30</td>
+          <td>Laboratorio</td>
+          <td>
+            <button>
+              <span><img src="./imgs/lixeira.svg" alt="Excluir Sala"><br>
+                Excluir</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>H07</td>
+          <td>50</td>
+          <td>Sala de Aula</td>
+          <td>
+            <button>
+              <span><img src="./imgs/lixeira.svg" alt="Excluir Sala"><br>
+                Excluir</span>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="cadastro-turma">
+      <h2>Cadastro de Turma</h2>
+      <form>
+        <label for="id-turma"><strong>ID de Turma:</strong></label>
+        <input type="text" id="id-turma-input" name="id-turma" required>
+        <label for="quantidade-alunos"><strong>Quantidade de Alunos:</strong></label>
+        <input type="text" id="quantidade-alunos-input" name="quantidade-alunos" required>
+        <label for="tipo-sala"><strong>Tipo de Sala:</strong></label>
+        <select id="tipo-sala-select" name="tipo-sala">
+          <option value="sala-aula">Sala de Aula</option>
+          <option value="laboratorio">Laboratorio</option>
+        </select>
+        <label for="dia-semana"><strong>Dia da semana:</strong></label>
+        <select id="dia-semana-select" name="dia-semana">
+          <option value="Segunda">Segunda</option>
+          <option value="Terca">Terça</option>
+          <option value="Quarta">Quarta</option>
+          <option value="Quinta">Quinta</option>
+          <option value="Sexta">Sexta</option>
+          <option value="Sabado">Sábado</option>
+        </select>
+        <button class="salvar-btn">Salvar</button>
+      </form>
+    </div>
+
+    <div class="turmas">
+      <h2>Turmas Cadastradas</h2>
+      <table>
+        <tr>
+          <th><strong>ID de Turma</strong></th>
+          <th><strong>Quantidade de Alunos</strong></th>
+          <th><strong>Tipo de Sala</strong></th>
+          <th><strong>Dia da semana</strong></th>
+          <th><strong>Excluir Turma</strong></th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>20</td>
+          <td>Laboratorio</td>
+          <td>Segunda</td>
+          <td>
+            <button>
+              <span><img src="./imgs/lixeira.svg" alt="Excluir Sala"><br>
+                Excluir</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>15</td>
+          <td>Laboratorio</td>
+          <td>Segunda</td>
+          <td>
+            <button>
+              <span><img src="./imgs/lixeira.svg" alt="Excluir Sala"><br>
+                Excluir</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>30</td>
+          <td>Sala de Aula</td>
+          <td>Segunda</td>
+          <td>
+            <button>
+              <span><img src="./imgs/lixeira.svg" alt="Excluir Sala"><br>
+                Excluir</span>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <div class="calcular-ensalamento">
+    <h2>Calcular ensalamentos</h2>
+    <table>
+      <tr>
+        <td>
+          <label for="dia-semana-select"><strong>Dia da semana: </strong></label>
+          <select id="dia-semana-select" name="dia-semana">
+            <option value="Segunda">Segunda</option>
+            <option value="Terca">Terça</option>
+            <option value="Quarta">Quarta</option>
+            <option value="Quinta">Quinta</option>
+            <option value="Sexta">Sexta</option>
+            <option value="Sabado">Sábado</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <button class="calcular-btn">Calcular</button>
+  </div>
+  <footer>
+    <!-- AQUI IRA OS CRÉDITOS -->
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
