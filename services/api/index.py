@@ -2,7 +2,7 @@ import os
 import json
 import uvicorn
 import mysql.connector
-from matcher import matcher
+#from matcher import matcher
 from dotenv import load_dotenv
 from itertools import combinations
 from fastapi import FastAPI, Request
