@@ -19,11 +19,10 @@ class Ensalamento:
     def __init__(self):
         # Estabelecer conexão com o banco de dados
         self.cnx = mysql.connector.connect(
-            host=os.environ.get("DB_HOST"),
-            database=os.environ.get("DB_NAME"),
-            port=os.environ.get("DB_PORT"),
-            user=os.environ.get("DB_USER"),
-            password=os.environ.get("DB_PASS")
+            host="127.0.0.1",
+            user="root",
+            password="",
+            database="ensalamento"
         )
 
         # Criação do cursor para executar comandos SQL
@@ -144,7 +143,7 @@ class Ensalamento:
         if resposta.lower() == 's':
             self.exibir_registros()
         else:
-            break
+            return
 
     def consultar_salas(self):
         # Consultar salas no banco de dados
