@@ -88,6 +88,8 @@ Desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?sty
 É um algoritmo de análise combinatória, que pega a quantidade de lugares das salas, quantidade de alunos por turmas, as restrições de dia da semana ou se a sala é laboratório ou não. E busca aprender a selecionar as turmas que melhor se encaixem nas salas.
 
 - O calculo combinatório direto no terminal.
+  
+- ![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/6c627e50-e005-4c18-94cf-cc8ee9c8741a)
 
 ![WhatsApp Image 2023-07-05 at 19 35 01](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/a024445a-1531-4c68-8f3e-6205a69270fc)
 
