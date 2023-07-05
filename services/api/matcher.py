@@ -48,3 +48,5 @@ def matcher():
         # Realizar as operações desejadas com cada combinação aqui
     
     return combinacao
+
+matcher()
