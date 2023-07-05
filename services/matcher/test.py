@@ -1,33 +1,11 @@
-import os
-import json
-import uvicorn
 import requests
 import itertools
-import numpy as np
 import pandas as pd
-import mysql.connector
-from dotenv import load_dotenv
-from itertools import combinations
-from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
-from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier
-from fastapi.middleware.cors import CORSMiddleware
 from sklearn.model_selection import train_test_split
 
-load_dotenv()
-
-cnx = mysql.connector.connect(
-    host=os.environ.get("DB_HOST"),
-    database=os.environ.get("DB_NAME"),
-    port=os.environ.get("DB_PORT"),
-    user=os.environ.get("DB_USER"),
-    password=os.environ.get("DB_PASS")
-)
-
-def test():
-    melhor_combinacao_por_turma = {}
-
+def matcher():
     # Configurar a URL da API
     api_url = "http://localhost:3000"
 
@@ -43,42 +21,66 @@ def test():
     # Criar o DataFrame para os dados das salas
     df_salas = pd.DataFrame(data['salas'])
 
-    # Verificar se as colunas existem nos DataFrames
-    colunas_combinacao = ['id_turma', 'qtd_alunos', 'Ambiente', 'Lugares']  # Substitua pelas colunas relevantes
-    if not all(col in df_turmas.columns for col in colunas_combinacao) or not all(col in df_salas.columns for col in colunas_combinacao):
-        print("Algumas colunas não foram encontradas nos DataFrames.")
-        return melhor_combinacao_por_turma
+    # Verificar se a coluna "Ambiente" está presente nos DataFrames df_turmas e df_salas
+    coluna_ambiente_presente = "Ambiente" in df_salas.columns
 
     # Concatenar os dados das turmas e salas em um único DataFrame
     df_combinacoes = pd.concat([df_turmas, df_salas], axis=1)
 
     # Extrair as colunas relevantes para a geração das combinações
+    colunas_combinacao = ['id_turma', 'qtd_alunos', 'Ambiente', 'Lugares']  # Substitua pelas colunas relevantes
+    if coluna_ambiente_presente:
+        colunas_combinacao.append("Ambiente")
+
     dados_combinacao = df_combinacoes[colunas_combinacao]
 
-    # Definir o tamanho das combinações
-    tamanho_combinacoes = len(colunas_combinacao) // 2
+    # Definir o tamanho fixo das combinações
+    tamanho_combinacoes = 2
 
     # Gerar as combinações
-    comb = itertools.combinations(dados_combinacao.index, tamanho_combinacoes)
+    comb = itertools.combinations(dados_combinacao.values.tolist(), tamanho_combinacoes)
 
-    for combination in comb:
-        # Obter os dados da combinação atual
-        dados_combinacao_atual = dados_combinacao.loc[list(combination)]
+    # Limitar o número de combinações processadas
+    max_combinacoes = 10
+    count = 0
 
-        # Calcular o custo da combinação atual
-        cost = dados_combinacao_atual.shape[0]
+   # Iterar sobre as combinações
+    for combinacao in comb:
+        # Extrair informações da combinação atual
+        turma1 = combinacao[0]
+        turma2 = combinacao[1]
 
-        # Iterar sobre as turmas
-        for turma_id in df_turmas['id_turma'].unique():
-            dados_turma = df_turmas[df_turmas['id_turma'] == turma_id]
+        # Verificar o número de lugares disponíveis nas salas correspondentes às turmas
+        sala1 = df_salas[df_salas['Ambiente'] == turma1[2]]
+        sala2 = df_salas[df_salas['Ambiente'] == turma2[2]]
 
-            # Verificar se a combinação atual atende aos critérios da turma
-            if dados_turma[colunas_combinacao].isin(dados_combinacao_atual.values).all(axis=1).any():
-                # Atualizar a melhor combinação para a turma se o custo for menor
-                if turma_id not in melhor_combinacao_por_turma or cost < melhor_combinacao_por_turma[turma_id][0]:
-                    melhor_combinacao_por_turma[turma_id] = (cost, combination)
+        # Verificar se ambas as salas existem e têm lugares suficientes
+        if not sala1.empty and not sala2.empty and sala1['Lugares'].values[0] >= turma1[1] and sala2['Lugares'].values[0] >= turma2[1]:
+            # Calcular uma métrica para selecionar a melhor sala (por exemplo, soma dos lugares disponíveis)
+            metrica_sala1 = sala1['Lugares'].values[0]
+            metrica_sala2 = sala2['Lugares'].values[0]
 
-    return melhor_combinacao_por_turma
+            # Comparar as métricas para determinar a melhor sala
+            if metrica_sala1 > metrica_sala2:
+                melhor_sala = sala1
+                melhor_turma = turma1
+            else:
+                melhor_sala = sala2
+                melhor_turma = turma2
 
-resultado = test()
-print(resultado)
+            # Realizar as operações desejadas com a melhor sala e turma aqui
+            # ...
+            # ...
+
+        # Imprimir a combinação e a sala selecionada
+        print(combinacao)
+        print("Melhor sala:", melhor_sala)
+        print("Melhor turma:", melhor_turma)
+
+        count += 1
+        if count >= max_combinacoes:
+            break
+
+        #return combinacao
+
+matcher()
