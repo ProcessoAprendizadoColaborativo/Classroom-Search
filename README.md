@@ -89,9 +89,25 @@ Desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?sty
 
 - O calculo combinatório direto no terminal.
   
-- ![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/6c627e50-e005-4c18-94cf-cc8ee9c8741a)
+### Registro de dados de salas e turmas
 
-![WhatsApp Image 2023-07-05 at 19 35 01](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/a024445a-1531-4c68-8f3e-6205a69270fc)
+-Inserindo os dados:
+
+![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/20dc6e81-6234-4f5e-b62c-9cddce24abf2)
+
+- Buscando os registros:
+
+![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/e18a9d88-bb4d-43ff-aadd-c391231fa5ed)
+
+- Combinação de salas e turmas:
+
+![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/27fc1d00-0e6a-4b2b-b601-cb73e163201a)
+
+
+
+
+
+
 
 ## Considerações Finais
 
