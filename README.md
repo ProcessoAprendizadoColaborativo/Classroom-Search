@@ -1,5 +1,11 @@
 ![Design sem nome (11)-fococlipping-standard](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/54cef8fc-702e-4e78-aeff-8b40389527e4)
 
+## Equipe
+
+- Desenvolvedores (2): Eder Ramos Filho e  Eduardo Paterno.
+
+- Gerente de projeto (2): Khatlyllen Vyctória Constantino e Ruan Hoffmann Martins.
+
 ## Identificação do problema
 
 O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente. Portanto decidimos automatizar o ensalamento utilizando 
@@ -17,7 +23,7 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
   - tipo de sala;
   - nº de lugares.
   
-- Permitir atualizar o ensalamento quando há uma solicitação de cancelamento de aula ou alteração de horário.  
+- Permitir atualizar o ensalamento. 
 
 - O sistema deve apresentar a sala de aula com o código da turma e o nº de lugares. 
 
@@ -27,7 +33,12 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 
 - Confiabilidade: o sistema deve ser confiável e ser acertivo da distribuição das salas/lab em até 95%.
 
-- Interface: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação do usuário e tornar a experiência de uso agradável.  
+- Interface: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação do usuário e tornar a experiência de uso agradável.
+
+## Restrições
+
+- O acesso aos dados por parte da Católica foi dificultado, então decidimos fazer com que a secretária digitasse os dados pela primeira vez.
+- O algoritmo foi uma das restrições, pois o modelo de IA que usamos na maioria do projeto no fim não estava sendo acertiva.
 
 ## UML
 
@@ -45,45 +56,39 @@ O banco de dados utilizado será o MySQL.
 
 ## Back-end
 
-### Criação da **API**
 
-CÓDIGO DA API AQUI
+
 
 ### ALGORITMO 
 Será desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-Algoritmo de análise combinatória:
+É  um algoritmo de análise combinatória, que pega a quantidade de lugares das salas, quantidade de alunos por turmas, as restrições de dia da semana ou se a sala é laboratório ou não.
 
 
 ## Front-end
 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-### Tela de Cadastro de turma e sala.
+### Tela de Cadastro de sala.
 
-![WhatsApp Image 2023-05-17 at 20 15 12](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/847e6480-93c9-4f8b-9a4c-713d20fa78a1)
+![WhatsApp Image 2023-07-05 at 19 23 14](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/954e9b89-6856-4e51-8a68-0ccf8a516e08)
 
-Aqui vai todo sobre o front-end
+### Salas cadastradas
 
-## Cronograma
+![WhatsApp Image 2023-07-05 at 19 23 50](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/245d307d-91a7-472d-ad6b-0f069cf291da)
 
-Levantamento de requisitos: 1 semanas
+### Cadastro de turma
 
-Desenvolvimento do banco de dados: 1 semana.
+![WhatsApp Image 2023-07-05 at 19 24 12](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/0e601008-a909-4b1d-b09b-b91fb61b42f3)
 
-Desenvolvimento do back-end: 4 semanas
+### Turmas cadastradas
 
-Desenvolvimento do front-end: 2 semanas 
+![WhatsApp Image 2023-07-05 at 19 25 06 (1)](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/70259d88-fb5c-4bd0-a952-281e23edc8e6)
 
-Testes e correções: 2 semanas
+### Calcular o ensalamento
 
-Implantação e treinamento: 1 semana
+![WhatsApp Image 2023-07-05 at 19 25 06 (2)](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/34d9813a-1d82-4643-bb93-a29075eeaeae)
 
-## Equipe
-
-- Desenvolvedores (2): Eder Ramos Filho e  Eduardo Paterno.
-
-- Gerente de projeto (2): Khatlyllen Vyctória Constantino e Ruan Hoffmann Martins.
 
 ## Considerações Finais
 
