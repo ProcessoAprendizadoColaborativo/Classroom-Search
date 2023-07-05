@@ -2,9 +2,9 @@
 
 ## Equipe
 
-- Desenvolvedores (2): Eder Ramos Filho e  Eduardo Paterno.
+- Desenvolvedores: Eder Ramos Filho e  Eduardo Paterno.
 
-- Gerente de projeto (2): Khatlyllen Vyctória Constantino e Ruan Hoffmann Martins.
+- Gerente de projeto: Khatlyllen Vyctória Constantino e Ruan Hoffmann Martins.
 
 ## Identificação do problema
 
@@ -39,6 +39,7 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 
 - O acesso aos dados por parte da Católica foi dificultado, então decidimos fazer com que a secretária digitasse os dados pela primeira vez.
 - O algoritmo foi uma das restrições, pois o modelo de IA que usamos na maioria do projeto no fim não estava sendo acertiva.
+- API.
 
 ## UML
 
@@ -53,9 +54,13 @@ O banco de dados utilizado será o MySQL.
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white).
 
 ![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
+______________________
 
 ## Back-end
 
+- O calculo combinatório direto no terminal.
+
+![WhatsApp Image 2023-07-05 at 19 35 01](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/a024445a-1531-4c68-8f3e-6205a69270fc)
 
 
 
