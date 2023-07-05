@@ -91,7 +91,6 @@ Desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?sty
 
 ![WhatsApp Image 2023-07-05 at 19 35 01](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/a024445a-1531-4c68-8f3e-6205a69270fc)
 
-
 ## Considerações Finais
 
 O trabalho no geral foi um desafio bem interessante, que nos exigiu muito a capacidade de analisar o problema por diversas óticas. Pensamos em algumas possíveis soluções porém nenhuma chegava perto do resultado esperado. O que nos fortaleceu como equipe foi saber dos limites de cada um e buscar aprender novas habilidades para ajudar o grupo.
