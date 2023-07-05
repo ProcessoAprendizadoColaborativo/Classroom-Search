@@ -45,31 +45,6 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 
 ![UML PAC 7 drawio](https://user-images.githubusercontent.com/29105030/236072075-78744beb-7757-42df-98d1-303dbfcb678d.png)
 
-## Tecnologias utilizadas
-
-### Banco de dados
-
-O banco de dados utilizado será o MySQL.
-
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white).
-
-![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
-______________________
-
-## Back-end
-
-- O calculo combinatório direto no terminal.
-
-![WhatsApp Image 2023-07-05 at 19 35 01](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/a024445a-1531-4c68-8f3e-6205a69270fc)
-
-
-
-### ALGORITMO 
-Será desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
-É  um algoritmo de análise combinatória, que pega a quantidade de lugares das salas, quantidade de alunos por turmas, as restrições de dia da semana ou se a sala é laboratório ou não.
-
-
 ## Front-end
 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -94,19 +69,32 @@ Será desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670
 
 ![WhatsApp Image 2023-07-05 at 19 25 06 (2)](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/34d9813a-1d82-4643-bb93-a29075eeaeae)
 
+## Tecnologias utilizadas
+
+### Banco de dados
+
+O banco de dados utilizado será o MySQL.
+
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white).
+
+![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
+______________________
+
+## Back-end
+
+### Algoritmo
+Desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+É um algoritmo de análise combinatória, que pega a quantidade de lugares das salas, quantidade de alunos por turmas, as restrições de dia da semana ou se a sala é laboratório ou não. E busca aprender a selecionar as turmas que melhor se encaixem nas salas.
+
+- O calculo combinatório direto no terminal.
+
+![WhatsApp Image 2023-07-05 at 19 35 01](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/a024445a-1531-4c68-8f3e-6205a69270fc)
+
 
 ## Considerações Finais
 
-O sistema deverá ser desenvolvido em conformidade com as normas de segurança e privacidade de dados.
-O sistema deverá ser intuitivo e de fácil utilização.
-O sistema deverá ser responsivo, adaptando-se a diferentes dispositivos (desktops, tablets e smartphones).
-O sistema deverá ser testado antes da implantação.
-Será realizado um treinamento para os usuários finais, a fim de garantir que saibam utilizar todas as funcionalidades do sistema.
+O trabalho no geral foi um desafio bem interessante, que nos exigiu muito a capacidade de analisar o problema por diversas óticas. Pensamos em algumas possíveis soluções porém nenhuma chegava perto do resultado esperado. O que nos fortaleceu como equipe foi saber dos limites de cada um e buscar aprender novas habilidades para ajudar o grupo.
+Sabemos que o resultado obtido poderia ter sido mais satisfatório, porém o avanço que demos em aplicar novos conhecimentos ao projeto já nos deixa satisfeitos. Agradecemos também ao professor Camargo por nos ajudar e dar ideias para soluções.
 
-## Contribuições
 
-- Dê um Fork no Repositório
-- Crie um branch: ```git checkout -b <nome_branch>.```
-- Faça suas alterações e confirme-as: ```git commit -m '<mensagem_commit>'```
-- Envie para o branch original: ```git push origin master```
-- Crie a solicitação de pull
