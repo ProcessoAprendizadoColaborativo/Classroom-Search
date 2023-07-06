@@ -51,6 +51,8 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato e r
 ## Tecnologias utilizadas
 
 - Bootstrap.
+- Node.
+- JS.
 - Mysql.
 - Python.
 - Xampp.
