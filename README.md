@@ -84,6 +84,16 @@ O banco de dados utilizado é MySQL.
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white).
 
 ![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
+
+## Tabela de salas
+
+![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/3f687e45-4c39-40d3-9c78-fe44d626a483)
+
+
+## Tabela turmas
+
+![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/24fefc5f-d84f-459f-89bb-9af8f148c17e)
+
 ______________________
 
 ## Back-end 
