@@ -52,6 +52,7 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 - Bootstrap.
 - Mysql.
 - Python.
+- Xampp.
 
 ## Front-end
 
@@ -94,7 +95,10 @@ O banco de dados utilizado é MySQL.
 
 ![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/24fefc5f-d84f-459f-89bb-9af8f148c17e)
 
-______________________
+
+## Servidor: Xampp
+
+![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/a16fb118-a63d-4bde-8473-826f55f28757)
 
 ## Back-end 
 
