@@ -6,16 +6,17 @@
 
 - Gerente de projeto: Khatlyllen Vyctória Constantino e Ruan Hoffmann Martins.
 
-## Identificação do problema
+## Relevância
 
-O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente. Portanto decidimos automatizar o ensalamento utilizando 
+O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente olhando uma lista e comparando com outra lista qualsala é mais ideal. Portanto decidimos automatizar o ensalamento utilizando um algoritmo de análise combinatória. Assim nosso objetivo é trazer a melhor proximidade de sala e turmas.
 
 ## Requisitos funcionais
 
-- Permitir cadastrar turmas. o algoritmo deve cadastrar as turmas com:
+- O algoritmo deve permitir cadastrar turmas com:
   - Código da turma;
   - nº de alunos;
   - tipo de sala.
+  - Dia da semana;
 - Também buscar os respectivos dados no banco de dados criado;
 
 - Permitir cadastrar salas/Laboratórios.
@@ -38,12 +39,19 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 ## Restrições
 
 - O acesso aos dados por parte da Católica foi dificultado, então decidimos fazer com que a secretária digitasse os dados pela primeira vez.
-- O algoritmo foi uma das restrições, pois o modelo de IA que usamos na maioria do projeto no fim não estava sendo acertiva.
+- O algoritmo foi uma das restrições, pois o modelo de IA que usamos na maioria do projeto no fim não estava sendo acertiva. Então decidimos alterar para um algoritmo de regressão linear.
 - API.
+- AWS.
 
 ## UML
 
 ![UML PAC 7 drawio](https://user-images.githubusercontent.com/29105030/236072075-78744beb-7757-42df-98d1-303dbfcb678d.png)
+
+## Tecnologias utilizadas
+
+- Bootstrap.
+- Mysql.
+- Python.
 
 ## Front-end
 
@@ -69,25 +77,22 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 
 ![WhatsApp Image 2023-07-05 at 19 25 06 (2)](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/34d9813a-1d82-4643-bb93-a29075eeaeae)
 
-## Tecnologias utilizadas
-
 ### Banco de dados
 
-O banco de dados utilizado será o MySQL.
+O banco de dados utilizado é MySQL.
 
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white).
 
 ![WhatsApp Image 2023-05-10 at 20 49 54](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/f4a26d54-d7de-40dc-864a-88bda29d4fda)
 ______________________
 
-## Back-end
+## Back-end 
 
-### Algoritmo
 Desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-É um algoritmo de análise combinatória, que pega a quantidade de lugares das salas, quantidade de alunos por turmas, as restrições de dia da semana ou se a sala é laboratório ou não. E busca aprender a selecionar as turmas que melhor se encaixem nas salas.
+### Algoritmo
 
-- O calculo combinatório direto no terminal.
+É um algoritmo de análise combinatória por Regressão Linear. Ele é utilizado para treinar um modelo que prevê a quantidade de alunos de uma turma com base na quantidade de lugares disponíveis nas salas. O modelo é treinado usando os dados das salas e turmas inseridos no banco de dados e, em seguida, são encontradas as combinações válidas de salas e turmas que atendem a duas determinadas restrições de dia da semana ou se a sala é laboratório ou não. A diferença máxima entre a quantidade de lugares disponíveis e a quantidade de alunos.
   
 ### Registro de dados de salas e turmas
 
@@ -102,11 +107,6 @@ Desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?sty
 - Combinação de salas e turmas:
 
 ![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/27fc1d00-0e6a-4b2b-b601-cb73e163201a)
-
-
-
-
-
 
 
 ## Considerações Finais
