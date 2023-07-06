@@ -97,7 +97,7 @@ O banco de dados utilizado é MySQL.
 ![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/24fefc5f-d84f-459f-89bb-9af8f148c17e)
 
 
-## Servidor: Xampp
+## Xampp
 
 - Para rodar a ligação de banco e algoritmo, deve inicializar o seu servidor Xampp, selecionando o Mysql.
 
