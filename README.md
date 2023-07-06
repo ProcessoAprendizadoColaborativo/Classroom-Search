@@ -37,7 +37,7 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato e r
 
 ## Restrições
 
-- O acesso aos dados por parte da Católica foi dificultado, então decidimos fazer com que a secretária digitasse os dados pela primeira vez.
+- O acesso aos dados por parte da Católica foi dificultado, então decidimos fazer com que o usuário digitasse os dados pela primeira vez.
 - O algoritmo foi uma das restrições, pois o modelo de IA que usamos na maioria do projeto no fim não estava sendo acertiva. Então decidimos alterar para um algoritmo de regressão linear.
 - A API apresentou algumas dificuldades e nos deixou inseguros quanto ao seu uso, portanto decidimos usar apenas o terminal.
 - AWS por ser greatuíto, acabou dando um custo inesperado na tentativa de subir para nuvem.
