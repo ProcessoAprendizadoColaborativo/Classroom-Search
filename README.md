@@ -2,13 +2,14 @@
 
 ## Equipe
 
-- Desenvolvedores: Eder Ramos Filho e  Eduardo Paterno.
-
-- Gerente de projeto: Khatlyllen Vyctória Constantino e Ruan Hoffmann Martins.
+- Eder Ramos Filho.
+- Eduardo Paterno.
+- Khatlyllen Vyctória Constantino.
+- Ruan Hoffmann Martins.
 
 ## Relevância
 
-O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente olhando uma lista e comparando com outra lista qualsala é mais ideal. Portanto decidimos automatizar o ensalamento utilizando um algoritmo de análise combinatória. Assim nosso objetivo é trazer a melhor proximidade de sala e turmas.
+O problema encontrado foi que o ensalamento na faculdade nem sempre é exato e rápido, e muitas das vezes gera retrabalho na secretaria para atualizar o ensalamento. Todo processo é feito manualmente olhando uma lista em excel e comparando com outra lista, qual sala é mais ideal. Portanto decidimos automatizar o ensalamento utilizando um algoritmo de análise combinatória. Assim nosso objetivo é trazer a melhor proximidade de sala e turmas.
 
 ## Requisitos funcionais
 
@@ -17,14 +18,14 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
   - nº de alunos;
   - tipo de sala.
   - Dia da semana;
-- Também buscar os respectivos dados no banco de dados criado;
+  - Também buscar os respectivos dados no banco de dados criado;
 
-- Permitir cadastrar salas/Laboratórios.
+- Permitir cadastrar salas/Laboratórios com:
   - Código de ambiente;
   - tipo de sala;
   - nº de lugares.
   
-- Permitir atualizar o ensalamento. 
+- Permitir gerar o ensalamento. 
 
 - O sistema deve apresentar a sala de aula com o código da turma e o nº de lugares. 
 
@@ -32,18 +33,18 @@ O problema encontrado foi que o ensalamento na faculdade nem sempre é exato, e 
 
 - Desempenho: o sistema deve ser prático e de rápida resposta a solicitação.
 
-- Confiabilidade: o sistema deve ser confiável e ser acertivo da distribuição das salas/lab em até 95%.
-
 - Interface: o sistema deve apresentar uma interface amigável e intuitiva, para facilitar a navegação do usuário e tornar a experiência de uso agradável.
 
 ## Restrições
 
 - O acesso aos dados por parte da Católica foi dificultado, então decidimos fazer com que a secretária digitasse os dados pela primeira vez.
 - O algoritmo foi uma das restrições, pois o modelo de IA que usamos na maioria do projeto no fim não estava sendo acertiva. Então decidimos alterar para um algoritmo de regressão linear.
-- API.
-- AWS.
+- A API apresentou algumas dificuldades e nos deixou inseguros quanto ao seu uso, portanto decidimos usar apenas o terminal.
+- AWS por ser greatuíto, acabou dando um custo inesperado na tentativa de subir para nuvem.
 
 ## UML
+
+- A seguir o uml do projeto de como ele deve funcionar.
 
 ![UML PAC 7 drawio](https://user-images.githubusercontent.com/29105030/236072075-78744beb-7757-42df-98d1-303dbfcb678d.png)
 
