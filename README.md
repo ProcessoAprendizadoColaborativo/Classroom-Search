@@ -117,10 +117,6 @@ Desenvolvido utilizando ![Python](https://img.shields.io/badge/python-3670A0?sty
 
 ![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/20dc6e81-6234-4f5e-b62c-9cddce24abf2)
 
-- Buscando os registros:
-
-![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/e18a9d88-bb4d-43ff-aadd-c391231fa5ed)
-
 - Combinação de salas e turmas:
 
 ![image](https://github.com/ProcessoAprendizadoColaborativo/Classroom-Search/assets/29105030/27fc1d00-0e6a-4b2b-b601-cb73e163201a)
